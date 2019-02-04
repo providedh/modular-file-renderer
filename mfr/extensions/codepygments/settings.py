@@ -2,7 +2,7 @@ from mfr import settings
 
 config = settings.child('CODEPYGMENTS_EXTENSION_CONFIG')
 
-MAX_SIZE = int(config.get('MAX_SIZE', 204800))  # 200kb
+MAX_SIZE = int(config.get('MAX_SIZE', 2048000))  # 2Mb
 
 lexer_lib = {
     '.gdt': 'xml',
